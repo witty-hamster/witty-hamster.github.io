@@ -1,7 +1,7 @@
 {
-  "name": "my-blog",
-  "description": "一个技术、阅读、认知类的博客",
-  "version": "1.0.0",
+  "name": "my-blogs",
+  "description": "This is a blog project",
+  "version": "2.0.0",
   "license": "MIT",
   "type": "module",
   "scripts": {
