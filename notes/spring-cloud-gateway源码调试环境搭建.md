@@ -74,6 +74,20 @@ Kotlin: [Internal Error] java.lang.NoSuchFieldError: FILE_HASHING_STRATEGY
 
 
 
-> [!CAUTION]
->
-> - [ ] TODO：模块启动成功了，但是访问 http://127.0.0.1:8080/image/webp 时还是失败的，需要进一步排查网关路由的问题
+## 调试环境搭建成功标识
+
+找到 `spring-cloud-gateway-sample` 子模块，运行 `GatewaySampleApplication#main(String)` 方法，用于启动示例程序。控制台打印如下图片内容，说明示例程序启动成功了。
+
+![image-20250725171252992](https://cdn.jsdelivr.net/gh/witty-hamster/oss@master/202507/image-20250725171252992.png)
+
+使用浏览器访问 `http://httpbin.org/` 地址，你将看到一个如下图所示的接口文档。恭喜你，本地源码调试环境搭建成功了。
+
+![image-20250725171512096](https://cdn.jsdelivr.net/gh/witty-hamster/oss@master/202507/image-20250725171512096.png)
+
+也可以通过浏览器访问 `http://httpbin.org/image/webp` 地址，你将看到一张“狼头”图片，恭喜你，本地源码调试环境搭建成功了。
+
+![image-20250725171640667](https://cdn.jsdelivr.net/gh/witty-hamster/oss@master/202507/image-20250725171640667.png)
+
+为什么访问 `http://httpbin.org/image/webp` 这个地址会返回一张图片呢？—— 因为在 `GatewaySampleApplication#customRouteLocator(RouteLocatorBuilder)` 方法中自定义了路由配置。
+
+![image-20250725171851341](https://cdn.jsdelivr.net/gh/witty-hamster/oss@master/202507/image-20250725171851341.png)
