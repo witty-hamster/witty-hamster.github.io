@@ -3,6 +3,13 @@ title: Spring Cloud Gateway 源码调试环境搭建
 icon: cil:dog
 date: 2025-11-13
 order: 1
+category:
+  - 收集箱
+tags:
+  - spring
+  - spring cloud
+star: true
+sticky: false
 ---
 
 # Spring Cloud Gateway 源码调试环境搭建

@@ -3,6 +3,12 @@ title: Redis踩坑记录
 icon: cil:dog
 date: 2025-11-13
 order: 1
+category:
+  - 收集箱
+tags:
+  - redis
+star: true
+sticky: false
 ---
 
 # Redis 踩坑记录

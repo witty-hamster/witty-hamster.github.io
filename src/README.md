@@ -3,9 +3,17 @@ home: true
 layout: Blog
 icon: house
 title: 主页
-# heroImage: /logo.png
+heroImage: /logo.png
+heroImageDark: /logo.png
+heroAlt: 柯基小宇宙
 heroText: 崔小毛's Blog
-# heroFullScreen: false
+# heroStyle: "background-color: #000"
+heroImageStyle:
+    width: 100px
+    heigth: 100px
+heroFullScreen: false
+bgImage: /bgImage.png
+bgImageDark: /bgImage.png
 # tagline: 所思、所想、所见、所得
 # projects:
 #   - icon: folder-open

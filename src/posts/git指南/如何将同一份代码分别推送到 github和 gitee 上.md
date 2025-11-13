@@ -5,6 +5,10 @@ date: 2025-11-13
 order: 1
 star: true
 sticky: true
+category:
+  - git使用技巧
+tags:
+  - git
 ---
 
 # 如何将同一份代码分别推送到 github 和 gitee 上
