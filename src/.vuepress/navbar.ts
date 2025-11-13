@@ -9,6 +9,12 @@ export default navbar([
     prefix: "/posts/",
     children: [
       {
+        text: "git 指南",
+        icon: "git",
+        prefix: "git-guide/",
+        children: []
+      },
+      {
         text: "苹果",
         icon: "pen-to-square",
         prefix: "apple/",
@@ -39,8 +45,8 @@ export default navbar([
         ],
       },
       { text: "樱桃", icon: "pen-to-square", link: "cherry" },
-      { text: "火龙果", icon: "pen-to-square", link: "dragonfruit" },
-      "tomato",
+      // { text: "火龙果", icon: "pen-to-square", link: "dragonfruit" },
+      // "tomato",
       "strawberry",
     ],
   },

@@ -2,7 +2,7 @@
 # 这是文章的标题
 title: 页面配置
 # 你可以自定义封面图片
-cover: /assets/images/cover1.jpg
+cover: /assets/images/cover2.jpg
 # 这是页面的图标
 icon: file
 # 这是侧边栏的顺序
@@ -19,9 +19,9 @@ tag:
   - 页面配置
   - 使用指南
 # 此页面会在文章列表置顶
-sticky: true
+sticky: false
 # 此页面会出现在星标文章中
-star: true
+star: false
 # 你可以自定义页脚
 footer: 这是测试显示的页脚
 # 你可以自定义版权信息

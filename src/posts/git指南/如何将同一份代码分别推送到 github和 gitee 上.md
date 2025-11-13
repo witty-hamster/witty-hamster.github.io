@@ -1,3 +1,12 @@
+---
+title: 如何将同一份代码分别推送到 github 和 gitee 上
+icon: bi:git
+date: 2025-11-13
+order: 1
+star: true
+sticky: true
+---
+
 # 如何将同一份代码分别推送到 github 和 gitee 上
 
 ## 为什么要双平台同步？

@@ -1,3 +1,10 @@
+---
+title: Spring Cloud Gateway 源码调试环境搭建
+icon: cil:dog
+date: 2025-11-13
+order: 1
+---
+
 # Spring Cloud Gateway 源码调试环境搭建
 
 > - Spring Cloud Gateway 源码环境所使用的版本：3.1.9
@@ -13,14 +20,13 @@
 ### 1. `spring-cloud-gateway-integration-tests`模块下 `Spring Cloud Gateway gRPC Integration Test` 子模块打包错误
 
 - 错误信息
+
 ```sh
 Failed to execute goal org.apache.maven.plugins:maven-checkstyle-plugin:3.1.2:check (checkstyle-validation) on project grpc: Failed during checkstyle configuration: cannot initialize module SuppressionFilter - Unable to read https://raw.githubusercontent.com/spring-cloud/spring-cloud-build/master/spring-cloud-build-tools/src/checkstyle/checkstyle-suppressions.xml: Read timed out -> [Help 1]
 ```
 
-- 原因分析：由于网络原因导致的 https://raw.githubusercontent.com/spring-cloud/spring-cloud-build/master/spring-cloud-build-tools/src/checkstyle/checkstyle-suppressions.xml 读取链接失败，从而使打包错误
+- 原因分析：由于网络原因导致的 <https://raw.githubusercontent.com/spring-cloud/spring-cloud-build/master/spring-cloud-build-tools/src/checkstyle/checkstyle-suppressions.xml> 读取链接失败，从而使打包错误
 - 解决方式：多大几次包、多尝试 😭😭😭
-
-
 
 ### 2. `spring-cloud-gateway-sample` 子模块示例程序运行错误
 
@@ -29,17 +35,17 @@ Failed to execute goal org.apache.maven.plugins:maven-checkstyle-plugin:3.1.2:ch
 
 ```sh
 Kotlin: [Internal Error] java.lang.NoSuchFieldError: FILE_HASHING_STRATEGY
-	at org.jetbrains.kotlin.jps.targets.KotlinJvmModuleBuildTarget.updateChunkMappings(KotlinJvmModuleBuildTarget.kt:362)
-	at org.jetbrains.kotlin.jps.build.KotlinBuilder.doBuild(KotlinBuilder.kt:463)
-	at org.jetbrains.kotlin.jps.build.KotlinBuilder.build(KotlinBuilder.kt:299)
-	at org.jetbrains.jps.incremental.IncProjectBuilder.runModuleLevelBuilders(IncProjectBuilder.java:1609)
-	at org.jetbrains.jps.incremental.IncProjectBuilder.runBuildersForChunk(IncProjectBuilder.java:1238)
-	at org.jetbrains.jps.incremental.IncProjectBuilder.buildTargetsChunk(IncProjectBuilder.java:1389)
-	at org.jetbrains.jps.incremental.IncProjectBuilder.buildChunkIfAffected(IncProjectBuilder.java:1203)
-	at org.jetbrains.jps.incremental.IncProjectBuilder.buildChunks(IncProjectBuilder.java:971)
-	at org.jetbrains.jps.incremental.IncProjectBuilder.runBuild(IncProjectBuilder.java:527)
-	at org.jetbrains.jps.incremental.IncProjectBuilder.build(IncProjectBuilder.java:236)
-	at org.jetbrains.jps.cmdline.BuildRunner.runBuild(BuildRunner.java:135)
+ at org.jetbrains.kotlin.jps.targets.KotlinJvmModuleBuildTarget.updateChunkMappings(KotlinJvmModuleBuildTarget.kt:362)
+ at org.jetbrains.kotlin.jps.build.KotlinBuilder.doBuild(KotlinBuilder.kt:463)
+ at org.jetbrains.kotlin.jps.build.KotlinBuilder.build(KotlinBuilder.kt:299)
+ at org.jetbrains.jps.incremental.IncProjectBuilder.runModuleLevelBuilders(IncProjectBuilder.java:1609)
+ at org.jetbrains.jps.incremental.IncProjectBuilder.runBuildersForChunk(IncProjectBuilder.java:1238)
+ at org.jetbrains.jps.incremental.IncProjectBuilder.buildTargetsChunk(IncProjectBuilder.java:1389)
+ at org.jetbrains.jps.incremental.IncProjectBuilder.buildChunkIfAffected(IncProjectBuilder.java:1203)
+ at org.jetbrains.jps.incremental.IncProjectBuilder.buildChunks(IncProjectBuilder.java:971)
+ at org.jetbrains.jps.incremental.IncProjectBuilder.runBuild(IncProjectBuilder.java:527)
+ at org.jetbrains.jps.incremental.IncProjectBuilder.build(IncProjectBuilder.java:236)
+ at org.jetbrains.jps.cmdline.BuildRunner.runBuild(BuildRunner.java:135)
 
 ```
 
@@ -71,8 +77,6 @@ Kotlin: [Internal Error] java.lang.NoSuchFieldError: FILE_HASHING_STRATEGY
 2025-07-25 00:50:58.614 DEBUG 26136 --- [           main] o.s.c.g.filter.GatewayMetricsFilter      : New routes count: 2
 2025-07-25 00:50:58.627  INFO 26136 --- [           main] o.s.c.g.sample.GatewaySampleApplication  : Started GatewaySampleApplication in 20.237 seconds (JVM running for 25.542)
 ```
-
-
 
 ## 调试环境搭建成功标识
 

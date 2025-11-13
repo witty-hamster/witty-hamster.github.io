@@ -1,4 +1,13 @@
-# 1. redisson客户端超时问题
+---
+title: Redis踩坑记录
+icon: cil:dog
+date: 2025-11-13
+order: 1
+---
+
+# Redis 踩坑记录
+
+## 1. redisson客户端超时问题
 
 **具体错误信息：**
 
@@ -36,7 +45,7 @@ Caused by: org.redisson.client.RedisTimeoutException: Command still hasn't been 
 
     ```java
     Config config = new Config();
-    config.setNettyThreads(64);		// 建议设置为 64 或更高，根据服务器的 CPU 核数调整
+    config.setNettyThreads(64);  // 建议设置为 64 或更高，根据服务器的 CPU 核数调整
     ```
 
 - 检查连接池配置
@@ -47,14 +56,14 @@ Caused by: org.redisson.client.RedisTimeoutException: Command still hasn't been 
 
     ```java
     config.useSingleServer()
-        .setConnectionPoolSize(64)				// 默认 64，可以增大到 128
-        .setConnectionMinimumIdleSize(24)		// 保持一定空闲连接
-        .setIdleConnectionTimeout(30000)		// 空闲连接超时（ms）
-        .setConnectTimeout(20000)				// 连接超时
-        .setTimeout(20000)						// 命令超时时间，避免无限等待
-        .setRetryAttempts(3)					// 重试次数
-        .setRetryInterval(1000)					// 重试间隔
-        .setPingConnectionInterval(30000)		// 保持连接活跃，防止中间设备断连，没 30000ms ping 一次 redis
+        .setConnectionPoolSize(64)    // 默认 64，可以增大到 128
+        .setConnectionMinimumIdleSize(24)  // 保持一定空闲连接
+        .setIdleConnectionTimeout(30000)  // 空闲连接超时（ms）
+        .setConnectTimeout(20000)    // 连接超时
+        .setTimeout(20000)      // 命令超时时间，避免无限等待
+        .setRetryAttempts(3)     // 重试次数
+        .setRetryInterval(1000)     // 重试间隔
+        .setPingConnectionInterval(30000)  // 保持连接活跃，防止中间设备断连，没 30000ms ping 一次 redis
     ```
 
 - 检查系统资源
@@ -83,6 +92,3 @@ Caused by: org.redisson.client.RedisTimeoutException: Command still hasn't been 
 
   - 老版本可能存在 Netty 或连接管理的 BUG
   - 建议使用 3.16 + 或 3.23 +
-
-
-
