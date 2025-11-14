@@ -1,6 +1,6 @@
 ---
 
-title: 基于 ELK + Filebeat 搭建并实现日志采集框架方案
+title: 基于 ELK + Filebeat 搭建并实现日志采集框架方案及日志脱敏
 
 icon: noto-v1:hatching-chick
 
@@ -61,15 +61,15 @@ sticky: false
 ⚙️ **示例配置（采集 JSON 日志）：**
 
 ```yaml
-filebeat.inputs:				# 输入流程配置
-- type: filestream				# 采集类型
-  paths:						# 采集日志的路径
+filebeat.inputs:    # 输入流程配置
+- type: filestream    # 采集类型
+  paths:      # 采集日志的路径
     - /app/logs/*.log
-  json.keys_under_root: true   	# 将 JSON 字段提升到顶层
+  json.keys_under_root: true    # 将 JSON 字段提升到顶层
   json.overwrite_keys: true
 
-output.elasticsearch:			# 输出流程配置
-  hosts: ["http://es-cluster:9200"]		# 将采集的日志直接输出到 ES 集群
+output.elasticsearch:   # 输出流程配置
+  hosts: ["http://es-cluster:9200"]  # 将采集的日志直接输出到 ES 集群
 ```
 
 ------
@@ -95,7 +95,7 @@ output.elasticsearch:			# 输出流程配置
 ⚙️ **示例：脱敏手机号（简单场景）**
 
 ```Ruby
-filter {				# 配置过滤器
+filter {    # 配置过滤器
   mutate {
     gsub => [
       "message", "(1[3-9]\d{9})", "138****1234"
@@ -169,8 +169,6 @@ filter {				# 配置过滤器
 
 ------
 
-
-
 ## 🔔  基于 Docker 容器化方式搭建 ELK + Filebeat 框架
 
 > 💡 使用 docker-compose 方式，进行容器编排
@@ -204,7 +202,7 @@ cluster.name: "docker-cluster-8.12.0"
 network.host: 0.0.0.0
 ```
 
-#####  logstash/pipelines.yml
+##### logstash/pipelines.yml
 
 ```yaml
 - pipeline.id: main
@@ -244,7 +242,7 @@ filter {
 output {
     elasticsearch {
         hosts => ["http://elasticsearch:9200"]
-        index => "app-logs-%{+YYYY.MM.dd}"					# 指定收集日志所存储的索引
+        index => "app-logs-%{+YYYY.MM.dd}"     # 指定收集日志所存储的索引
     }
 }
 ```
@@ -302,16 +300,16 @@ ES_DATA_PATH=./data/elasticsearch
 #### 3️⃣ 编写容器编排 `docker-compose.yaml`
 
 ```yaml
-# version: '3.8'			# 使用 docker compose V1 版本的容器编排技术时，需要指定 version。高版本的不需要指定了
+# version: '3.8'   # 使用 docker compose V1 版本的容器编排技术时，需要指定 version。高版本的不需要指定了
 
-services:					# 各服务组件配置
-  elasticsearch:			# elasticsearch 配置项
-    image: docker.elastic.co/elasticsearch/elasticsearch:${ELK_VERSION}	# 指定镜像（版本统一）
-    container_name: elasticsearch										# 指定服务的容器名
-    environment:														# 服务容器启动时的环境配置
-      - discovery.type=single-node										# 单机模式
-      - xpack.security.enabled=false    								# 关闭安全认证（生产环境建议开启）
-      - ES_JAVA_OPTS=${ES_JAVA_OPTS}									# 配置 JVM
+services:     # 各服务组件配置
+  elasticsearch:   # elasticsearch 配置项
+    image: docker.elastic.co/elasticsearch/elasticsearch:${ELK_VERSION} # 指定镜像（版本统一）
+    container_name: elasticsearch          # 指定服务的容器名
+    environment:              # 服务容器启动时的环境配置
+      - discovery.type=single-node          # 单机模式
+      - xpack.security.enabled=false            # 关闭安全认证（生产环境建议开启）
+      - ES_JAVA_OPTS=${ES_JAVA_OPTS}         # 配置 JVM
     ulimits:
       memlock:
         soft: -1
@@ -320,11 +318,11 @@ services:					# 各服务组件配置
       - ${ES_DATA_PATH}:/usr/share/elasticsearch/data   # 挂载数据持久化
       - ./elasticsearch/elasticsearch.yml:/usr/share/elasticsearch/config/elasticsearch.yml:ro  # 挂载自定义配置
     ports:
-      - "9200:9200"										# 挂载映射端口
-    networks:											# 同一个容器环境下的专属网络
+      - "9200:9200"          # 挂载映射端口
+    networks:           # 同一个容器环境下的专属网络
       - elk
 
-  logstash:					# logstash 配置项
+  logstash:     # logstash 配置项
     image: docker.elastic.co/logstash/logstash:${ELK_VERSION}
     container_name: logstash
     depends_on:
@@ -337,7 +335,7 @@ services:					# 各服务组件配置
     networks:
       - elk
 
-  kibana:					# kibana 配置项
+  kibana:     # kibana 配置项
     image: docker.elastic.co/kibana/kibana:${ELK_VERSION}
     container_name: kibana
     depends_on:
@@ -349,7 +347,7 @@ services:					# 各服务组件配置
     networks:
       - elk
   
-  filebeat:					# filebeat 配置项
+  filebeat:     # filebeat 配置项
     image: docker.elastic.co/beats/filebeat:${FILEBEAT_VERSION}
     container_name: filebeat
     depends_on:
@@ -412,7 +410,7 @@ docker ps
 
 或
 
-docker compose ps		# 注意：docker ps 可以在宿主机的全局任意位置执行；docker compose ps 必须进入到有 docker-compose.yml 文件的文件夹后，才能执行
+docker compose ps  # 注意：docker ps 可以在宿主机的全局任意位置执行；docker compose ps 必须进入到有 docker-compose.yml 文件的文件夹后，才能执行
 ```
 
 进入到指定容器内部，运行容器内部的一些命令
@@ -425,8 +423,8 @@ docker exec -it <容器名/容器ID> /bin/bash
 
 #### 5️⃣ 验证服务
 
-- Elasticsearch: http://localhost:9200
-- Kibana: http://localhost:5601
+- Elasticsearch: <http://localhost:9200>
+- Kibana: <http://localhost:5601>
 - 在 Kibana 中创建索引模式（如 `app-logs-*`），即可查看日志。
 
 #### 🔒 生产环境注意事项
@@ -512,10 +510,10 @@ monitoring.ui.container.elasticsearch.enabled: true
 > 💡 其他常用配置：
 >
 > ```yaml
-> i18n.locale: "zh-CN"               				# 中文界面
+> i18n.locale: "zh-CN"                   # 中文界面
 > elasticsearch.username: "kibana_system"
-> elasticsearch.password: "xxxx"     				# 若启用了安全认证
-> server.publicBaseUrl: "https://kibana.example.com"  		# 反向代理时设置
+> elasticsearch.password: "xxxx"         # 若启用了安全认证
+> server.publicBaseUrl: "https://kibana.example.com"    # 反向代理时设置
 > ```
 
 #### 3. logstash/logstash.conf
@@ -537,8 +535,6 @@ input {
   }
 }
 ```
-
-
 
 - **Filter（过滤器，可选）**
   - 典型用途：
@@ -563,8 +559,6 @@ filter {
 > }
 > ```
 
-
-
 - **Output（输出）**
   - **hosts**：Elasticsearch 地址（容器内通过服务名访问）。
   - **index**：动态索引名，按天创建（便于管理与清理）。
@@ -580,8 +574,6 @@ output {
   }
 }
 ```
-
-
 
 #### 4. filebeat/filebeat.yml
 
@@ -604,14 +596,10 @@ filebeat.inputs:
     - /var/log/*.log
 ```
 
-
-
 > 💡 其他输入类型：
 >
 > - `container`：直接读取 Docker 容器日志（需挂载 `/var/lib/docker/containers`）。
 > - 支持多 input，可同时采集系统日志、应用日志等。
-
-
 
 - **输出（发送目的地）**
   - **说明**：发送到同网络中的 Logstash 服务。
@@ -622,8 +610,6 @@ output.logstash:
   hosts: ["logstash:5044"]
 ```
 
-
-
 > ✅ 替代方案（直连 ES）：
 >
 > ```yaml
@@ -632,8 +618,6 @@ output.logstash:
 > ```
 >
 > 适用于简单场景（无需复杂过滤），性能更高。
-
-
 
 - **其他重要配置（可选）**
   - **作用**：自动加载 Kibana 仪表盘和 Elasticsearch 索引模板（需首次运行时启用）。
@@ -647,8 +631,6 @@ setup.template.name: "filebeat"
 setup.template.pattern: "filebeat-*"
 ```
 
-
-
 #### 🔁 总结：各组件协作流程
 
 1. **Filebeat** 监控本地日志文件 → 读取新增内容。
@@ -656,8 +638,6 @@ setup.template.pattern: "filebeat-*"
 3. **Logstash** 接收后，经过 `filter` 处理（如解析、丰富字段）。
 4. 将结构化日志写入 **Elasticsearch** 的 `logs-2025.11.14` 索引。
 5. **Kibana** 连接 Elasticsearch，用户通过 Web 界面查询、可视化日志。
-
-
 
 ## 📎 实际生产中的日志脱敏过程探索
 
@@ -681,7 +661,7 @@ filebeat.inputs:
     encoding: utf-8
 
     parsers:
-      - multiline:					# 这里要使用 multiline 进行多行合并，主要是为了解决打印异常日志 exception 时，日志分为多行的问题
+      - multiline:     # 这里要使用 multiline 进行多行合并，主要是为了解决打印异常日志 exception 时，日志分为多行的问题
           type: pattern
           pattern: '^\d{4}-\d{2}-\d{2} \d{2}:\d{2}:\d{2}(?:\.\d{3})?'
           negate: true
@@ -706,8 +686,6 @@ logging.to_stderr: true
 logging.metrics.enabled: false
 
 ```
-
-
 
 ### 三、实践过程 —— logstash 配置方案
 
@@ -980,8 +958,6 @@ output {
 
 ```
 
-
-
 #### 2️⃣ 不指定字段，使用递归函数模糊匹配方案
 
 ```conf
@@ -1219,8 +1195,6 @@ output {
 
 ```
 
-
-
 #### 3️⃣ 取消对 JSON 结构的识别，支持任意内容方案
 
 ```conf
@@ -1380,8 +1354,6 @@ output {
 }
 
 ```
-
-
 
 #### 4️⃣ （最终方案，含注释说明）同时支持多种日志格式、任意内容方案
 
@@ -1694,8 +1666,6 @@ output {
 }
 
 ```
-
-
 
 ### 四、最终效果
 
