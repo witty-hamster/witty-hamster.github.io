@@ -10,18 +10,6 @@ export default sidebar({
       link: "posts/",
       children: "structure",
     },
-    {
-      text: "如何使用",
-      icon: "laptop-code",
-      prefix: "demo/",
-      link: "demo/",
-      children: "structure",
-    },
-    "intro",
-    {
-      text: "幻灯片",
-      icon: "person-chalkboard",
-      link: "https://ecosystem.vuejs.press/zh/plugins/markdown/revealjs/demo.html",
-    },
+    "intro"
   ],
 });
