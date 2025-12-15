@@ -1,4 +1,7 @@
 {
   "newFileLocation": "folder",
-  "newFileFolderPath": "notes"
+  "newFileFolderPath": "notes",
+  "strictLineBreaks": true,
+  "attachmentFolderPath": "annexes",
+  "useMarkdownLinks": true
 }
