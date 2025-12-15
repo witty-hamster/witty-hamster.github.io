@@ -178,7 +178,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -192,13 +193,13 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "9ff711f294843f14",
+  "active": "a6f349794ca22bf2",
   "lastOpenFiles": [
     "src/README.md",
     "src/intro.md",
     "src/posts/收集箱/基于 ELK + Filebeat 实现日志采集方案.md",
-    "images/20251114",
-    "images/20251114/image-20251114132831315.png",
+    "images/202511",
+    "images/202511/image-20251114132831315.png",
     "未命名.base",
     "未命名.canvas",
     "src/posts/小技巧.md",
