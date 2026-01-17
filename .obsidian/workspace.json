@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "c48ad9768701f65f",
+        "id": "e1a1fe97de92d5a2",
         "type": "tabs",
         "children": [
           {
-            "id": "6ce287093a879e6e",
+            "id": "cfa2359ba59fc080",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "annexes/Python技术/AI + LLM/OpenAI 开发.md",
+                "file": "notes/问题分析/百万级数据计算与存储问题.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "OpenAI 开发"
+              "title": "百万级数据计算与存储问题"
             }
           }
         ]
@@ -78,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 370.5
+    "width": 256.5
   },
   "right": {
     "id": "07026863b8e512d8",
@@ -154,13 +154,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "annexes/Python技术/AI + LLM/OpenAI 开发.md",
+                "file": "notes/问题分析/百万级数据计算与存储问题.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "OpenAI 开发 的大纲"
+              "title": "百万级数据计算与存储问题 的大纲"
             }
           },
           {
@@ -178,22 +178,32 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 356.5
   },
   "left-ribbon": {
     "hiddenItems": {
+      "bases:新建数据库": false,
       "switcher:打开快速切换": false,
       "graph:查看关系图谱": false,
       "canvas:新建白板": false,
       "daily-notes:打开/创建今天的日记": false,
       "templates:插入模板": false,
       "command-palette:打开命令面板": false,
-      "bases:创建新数据库": false,
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "a6f349794ca22bf2",
+  "active": "cfa2359ba59fc080",
   "lastOpenFiles": [
+    "notes/面试/04｜容器化与云原生.md",
+    "notes/面试/03｜数据库、缓存与中间件.md",
+    "notes/面试/02｜Spring生态体系与微服务.md",
+    "notes/面试/01｜Java核心底层技术.md",
+    "notes/问题分析/百万级数据计算与存储问题.md",
+    "notes/面试",
+    "notes/TODO LIST.md",
+    "notes/问题分析",
+    "notes/常用工具.md",
+    "src/posts/git指南/如何将同一份代码分别推送到 github和 gitee 上.md",
     "annexes/Python技术/AI + LLM/LangChain 基础.md",
     "annexes/Python技术/AI + LLM/AI 领域基础概念.md",
     "annexes/Python技术/AI + LLM/支持多模态输入的 AI Chatbot App.md",
@@ -210,8 +220,6 @@
     "annexes/Java技术/分布式架构设计&微服务/分布式理论、架构设计（自定义RPC）.pdf",
     "annexes/Java技术/分布式架构设计&微服务/【原创】分布式核心理论&分布式架构设计&自定义RPC.md",
     "annexes/Python技术/AI + LLM/OpenAI 开发【PPT图片版】.pdf",
-    "annexes/Python技术/AI + LLM/实用Prompt指令大全.xlsx",
-    "annexes/Python技术/AI + LLM/ChatGPT提示技巧工程完全指南.pdf",
     "annexes/Python技术/AI + LLM/LangChain对话模型+服务部署.md",
     "annexes/Python技术/AI + LLM/Prompt Engineering  提示词工程.md",
     "annexes/Python技术/AI + LLM/OpenAI 开发.md",
