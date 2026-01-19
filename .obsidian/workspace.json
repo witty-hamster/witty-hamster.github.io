@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "e1a1fe97de92d5a2",
+        "id": "74b252a4c658bdce",
         "type": "tabs",
         "children": [
           {
-            "id": "cfa2359ba59fc080",
+            "id": "9c3e720acf95637d",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "notes/问题分析/百万级数据计算与存储问题.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "百万级数据计算与存储问题"
+              "title": "新标签页"
             }
           }
         ]
@@ -78,7 +74,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 256.5
+    "width": 256.5,
+    "collapsed": true
   },
   "right": {
     "id": "07026863b8e512d8",
@@ -154,13 +151,12 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "notes/问题分析/百万级数据计算与存储问题.md",
-                "followCursor": false,
+                "followCursor": true,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "百万级数据计算与存储问题 的大纲"
+              "title": "大纲"
             }
           },
           {
@@ -178,7 +174,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 356.5
+    "width": 439.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -192,12 +188,15 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "cfa2359ba59fc080",
+  "active": "9c3e720acf95637d",
   "lastOpenFiles": [
+    "notes/面试/面试目录.md",
     "notes/面试/04｜容器化与云原生.md",
     "notes/面试/03｜数据库、缓存与中间件.md",
     "notes/面试/02｜Spring生态体系与微服务.md",
     "notes/面试/01｜Java核心底层技术.md",
+    "notes/面试/05｜综合实战.md",
+    "notes/未命名.base",
     "notes/问题分析/百万级数据计算与存储问题.md",
     "notes/面试",
     "notes/TODO LIST.md",
@@ -219,7 +218,6 @@
     "annexes/Java技术/分布式架构设计&微服务/深入分布式理论、分布式系统设计策略、分布式架构网络通信.pdf",
     "annexes/Java技术/分布式架构设计&微服务/分布式理论、架构设计（自定义RPC）.pdf",
     "annexes/Java技术/分布式架构设计&微服务/【原创】分布式核心理论&分布式架构设计&自定义RPC.md",
-    "annexes/Python技术/AI + LLM/OpenAI 开发【PPT图片版】.pdf",
     "annexes/Python技术/AI + LLM/LangChain对话模型+服务部署.md",
     "annexes/Python技术/AI + LLM/Prompt Engineering  提示词工程.md",
     "annexes/Python技术/AI + LLM/OpenAI 开发.md",
