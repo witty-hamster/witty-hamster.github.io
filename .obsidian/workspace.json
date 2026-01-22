@@ -4,17 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "74b252a4c658bdce",
+        "id": "713255c461f2c839",
         "type": "tabs",
         "children": [
           {
-            "id": "9c3e720acf95637d",
+            "id": "f7d7b61836d9d9b0",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
-              "icon": "lucide-file",
-              "title": "新标签页"
+              "type": "split-diff-view",
+              "state": {
+                "aFile": ".obsidian/workspace.json",
+                "bFile": ".obsidian/workspace.json",
+                "aRef": ""
+              },
+              "icon": "diff",
+              "title": "Diff: workspace.json"
             }
           }
         ]
@@ -74,8 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 256.5,
-    "collapsed": true
+    "width": 395.5
   },
   "right": {
     "id": "07026863b8e512d8",
@@ -170,7 +173,7 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 5
       }
     ],
     "direction": "horizontal",
@@ -188,20 +191,28 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "9c3e720acf95637d",
+  "active": "f7d7b61836d9d9b0",
   "lastOpenFiles": [
+    "notes/技术沙箱/第一阶段｜内功修炼/任务清单/Week1｜任务清单 (JVM Tuning - JVM调优).md",
+    "notes/技术沙箱/第一阶段｜内功修炼/001｜Java 底层实验场 (Tech-Sandbox) 学习路线.md",
+    "notes/技术沙箱/第一阶段｜内功修炼/任务清单",
+    "notes/技术沙箱/技术方向大框架.md",
+    "notes/技术沙箱/第一阶段｜内功修炼",
+    "notes/技术沙箱/未命名.md",
+    "notes/TODO LIST.md",
+    "notes/技术沙箱",
+    "notes/常用工具.md",
+    "notes/未命名 1.base",
+    "notes/未命名.base",
+    "notes/面试/01｜Java核心底层技术.md",
     "notes/面试/面试目录.md",
     "notes/面试/04｜容器化与云原生.md",
     "notes/面试/03｜数据库、缓存与中间件.md",
     "notes/面试/02｜Spring生态体系与微服务.md",
-    "notes/面试/01｜Java核心底层技术.md",
     "notes/面试/05｜综合实战.md",
-    "notes/未命名.base",
     "notes/问题分析/百万级数据计算与存储问题.md",
     "notes/面试",
-    "notes/TODO LIST.md",
     "notes/问题分析",
-    "notes/常用工具.md",
     "src/posts/git指南/如何将同一份代码分别推送到 github和 gitee 上.md",
     "annexes/Python技术/AI + LLM/LangChain 基础.md",
     "annexes/Python技术/AI + LLM/AI 领域基础概念.md",
@@ -213,10 +224,6 @@
     "annexes/Java技术/开源框架应用&源码分析/mybatis.pdf",
     "annexes/Java技术/开源框架应用&源码分析/【扩展】springboot 嵌入式tomcat源码剖析.pdf",
     "annexes/Java技术/分布式架构设计&微服务/Zookeeper.pdf",
-    "annexes/Java技术/分布式架构设计&微服务/Spring Cloud.pdf",
-    "annexes/Java技术/分布式架构设计&微服务/Dubbo.pdf",
-    "annexes/Java技术/分布式架构设计&微服务/深入分布式理论、分布式系统设计策略、分布式架构网络通信.pdf",
-    "annexes/Java技术/分布式架构设计&微服务/分布式理论、架构设计（自定义RPC）.pdf",
     "annexes/Java技术/分布式架构设计&微服务/【原创】分布式核心理论&分布式架构设计&自定义RPC.md",
     "annexes/Python技术/AI + LLM/LangChain对话模型+服务部署.md",
     "annexes/Python技术/AI + LLM/Prompt Engineering  提示词工程.md",
@@ -232,10 +239,6 @@
     "annexes/Java技术/分布式架构设计&微服务/分布式理论图解/任务一 15 2PC与3PC协议.jpg",
     "annexes/Java技术/分布式架构设计&微服务/分布式理论图解/任务一 05强弱一致性-读写一致性.jpg",
     "annexes/Java技术/分布式架构设计&微服务/分布式理论图解/任务三 05 Netty线程模型.jpg",
-    "src/posts/收集箱/基于 ELK + Filebeat 实现日志采集方案.md",
-    "src/README.md",
-    "src/intro.md",
-    "未命名.canvas",
-    "src/posts/小技巧.md"
+    "未命名.canvas"
   ]
 }
