@@ -4,9 +4,9 @@
 
 #### 🛠️ 第一步：实验室环境搭建（Day 1-2）
 
-- [ ] **构建“技术沙盒”项目：** 创建一个简单的 Spring Boot 工程，名为 `tech-sandbox-jvm`。
+- [x] **构建“技术沙盒”项目：** 创建一个简单的 Spring Boot 工程，名为 `tech-sandbox-jvm`。
     
-- [ ] **工具安装：**
+- [x] **工具安装：**
     
     - 安装 **VisualVM** (或使用 JDK 自带的 jvisualvm)。
         
