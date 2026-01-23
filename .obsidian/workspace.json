@@ -4,21 +4,39 @@
     "type": "split",
     "children": [
       {
-        "id": "713255c461f2c839",
+        "id": "59957ad2831f39e4",
         "type": "tabs",
+        "dimension": 50.82236842105263,
         "children": [
           {
-            "id": "f7d7b61836d9d9b0",
+            "id": "86f7b8baac8317da",
             "type": "leaf",
             "state": {
-              "type": "split-diff-view",
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "关系图谱"
+            }
+          }
+        ]
+      },
+      {
+        "id": "0dfacf5ec249616a",
+        "type": "tabs",
+        "dimension": 49.17763157894737,
+        "children": [
+          {
+            "id": "9eee5a98d2f17cce",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
               "state": {
-                "aFile": ".obsidian/workspace.json",
-                "bFile": ".obsidian/workspace.json",
-                "aRef": ""
+                "file": "notes/技术沙箱/技术延伸｜数据库/MySQL数据库表统计空间大小方案.md",
+                "mode": "preview",
+                "source": false
               },
-              "icon": "diff",
-              "title": "Diff: workspace.json"
+              "icon": "lucide-file",
+              "title": "MySQL数据库表统计空间大小方案"
             }
           }
         ]
@@ -78,7 +96,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 395.5
+    "width": 270.5
   },
   "right": {
     "id": "07026863b8e512d8",
@@ -177,7 +195,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 439.5
+    "width": 256.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -191,14 +209,17 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "f7d7b61836d9d9b0",
+  "active": "ffcf6b3927c7318b",
   "lastOpenFiles": [
+    "notes/2026-01-23.md",
+    "notes/技术沙箱/技术延伸｜数据库/MySQL数据库表统计空间大小方案.md",
+    "notes/技术沙箱/未命名.md",
+    "notes/技术沙箱/技术延伸｜数据库",
     "notes/技术沙箱/第一阶段｜内功修炼/任务清单/Week1｜任务清单 (JVM Tuning - JVM调优).md",
     "notes/技术沙箱/第一阶段｜内功修炼/001｜Java 底层实验场 (Tech-Sandbox) 学习路线.md",
     "notes/技术沙箱/第一阶段｜内功修炼/任务清单",
     "notes/技术沙箱/技术方向大框架.md",
     "notes/技术沙箱/第一阶段｜内功修炼",
-    "notes/技术沙箱/未命名.md",
     "notes/TODO LIST.md",
     "notes/技术沙箱",
     "notes/常用工具.md",
@@ -223,15 +244,12 @@
     "annexes/Java技术/开源框架应用&源码分析/【原创】Mybatis 的应用及源码分析.md",
     "annexes/Java技术/开源框架应用&源码分析/mybatis.pdf",
     "annexes/Java技术/开源框架应用&源码分析/【扩展】springboot 嵌入式tomcat源码剖析.pdf",
-    "annexes/Java技术/分布式架构设计&微服务/Zookeeper.pdf",
     "annexes/Java技术/分布式架构设计&微服务/【原创】分布式核心理论&分布式架构设计&自定义RPC.md",
     "annexes/Python技术/AI + LLM/LangChain对话模型+服务部署.md",
     "annexes/Python技术/AI + LLM/Prompt Engineering  提示词工程.md",
-    "annexes/Python技术/AI + LLM/OpenAI 开发.md",
     "annexes/Java技术/开源框架应用&源码分析/【图解】经典三层模式&mvc模式.png",
     "annexes/Java技术/开源框架应用&源码分析/【图解】spring IoC循环依赖问题.png",
     "annexes/Java技术/开源框架应用&源码分析/【图解】spring mvc模式和原生servlet模式区别.png",
-    "annexes/Java技术/开源框架应用&源码分析/spring源码导入idea教程与问题.md",
     "annexes/Java技术/分布式架构设计&微服务/分布式理论图解/任务三 04NIO.jpg",
     "annexes/Java技术/分布式架构设计&微服务/分布式理论图解/任务一 10CAP 生活举例.jpg",
     "annexes/Java技术/分布式架构设计&微服务/分布式理论图解/任务一 02集群与分布式.jpg",
