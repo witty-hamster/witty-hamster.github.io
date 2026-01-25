@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "bb793f979a842173",
+        "id": "04433ab1a176b994",
         "type": "tabs",
         "children": [
           {
-            "id": "41fa50c910ec8699",
+            "id": "6409e9a2a92a99f9",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "notes/技术沙箱/第一阶段｜内功修炼/任务清单/Week1｜任务清单 (JVM Tuning - JVM调优).md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "Week1｜任务清单 (JVM Tuning - JVM调优)"
+              "title": "新标签页"
             }
           }
         ]
@@ -182,7 +178,7 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "bases:新建数据库": false,
+      "bases:创建新数据库": false,
       "switcher:打开快速切换": false,
       "graph:查看关系图谱": false,
       "canvas:新建白板": false,
@@ -193,14 +189,14 @@
       "workspaces:管理工作区布局": false
     }
   },
-  "active": "ffcf6b3927c7318b",
+  "active": "a6f349794ca22bf2",
   "lastOpenFiles": [
     "notes/技术沙箱/技术延伸｜数据库/MySQL数据库表统计空间大小方案.md",
+    "notes/技术沙箱/第一阶段｜内功修炼/任务清单/Week1｜任务清单 (JVM Tuning - JVM调优).md",
     "notes/未命名.base",
     "notes/2026-01-23.md",
     "notes/技术沙箱/未命名.md",
     "notes/技术沙箱/技术延伸｜数据库",
-    "notes/技术沙箱/第一阶段｜内功修炼/任务清单/Week1｜任务清单 (JVM Tuning - JVM调优).md",
     "notes/技术沙箱/第一阶段｜内功修炼/001｜Java 底层实验场 (Tech-Sandbox) 学习路线.md",
     "notes/技术沙箱/第一阶段｜内功修炼/任务清单",
     "notes/技术沙箱/技术方向大框架.md",
