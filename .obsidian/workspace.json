@@ -4,17 +4,41 @@
     "type": "split",
     "children": [
       {
-        "id": "04433ab1a176b994",
+        "id": "bb793f979a842173",
         "type": "tabs",
         "children": [
           {
-            "id": "6409e9a2a92a99f9",
+            "id": "41fa50c910ec8699",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "notes/技术沙箱/技术延伸｜避坑指南/关于Java Stream流式处理避坑指南.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "新标签页"
+              "title": "关于Java Stream流式处理避坑指南"
+            }
+          }
+        ]
+      },
+      {
+        "id": "c25cd5532451a61b",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "0794f086860ebd5a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "notes/技术沙箱/技术延伸｜避坑指南/关于Java Stream流式处理避坑指南.md",
+                "mode": "preview",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "关于Java Stream流式处理避坑指南"
             }
           }
         ]
@@ -150,13 +174,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "notes/技术沙箱/第一阶段｜内功修炼/任务清单/Week1｜任务清单 (JVM Tuning - JVM调优).md",
+                "file": "notes/技术沙箱/技术延伸｜避坑指南/关于Java Stream流式处理避坑指南.md",
                 "followCursor": true,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Week1｜任务清单 (JVM Tuning - JVM调优) 的大纲"
+              "title": "关于Java Stream流式处理避坑指南 的大纲"
             }
           },
           {
@@ -174,11 +198,11 @@
       }
     ],
     "direction": "horizontal",
-    "width": 256.5
+    "width": 252.5
   },
   "left-ribbon": {
     "hiddenItems": {
-      "bases:创建新数据库": false,
+      "bases:新建数据库": false,
       "switcher:打开快速切换": false,
       "graph:查看关系图谱": false,
       "canvas:新建白板": false,
@@ -189,10 +213,12 @@
       "workspaces:管理工作区布局": false
     }
   },
-  "active": "a6f349794ca22bf2",
+  "active": "ffcf6b3927c7318b",
   "lastOpenFiles": [
-    "notes/技术沙箱/技术延伸｜数据库/MySQL数据库表统计空间大小方案.md",
     "notes/技术沙箱/第一阶段｜内功修炼/任务清单/Week1｜任务清单 (JVM Tuning - JVM调优).md",
+    "notes/技术沙箱/技术延伸｜避坑指南/关于Java Stream流式处理避坑指南.md",
+    "notes/技术沙箱/技术延伸｜避坑指南",
+    "notes/技术沙箱/技术延伸｜数据库/MySQL数据库表统计空间大小方案.md",
     "notes/未命名.base",
     "notes/2026-01-23.md",
     "notes/技术沙箱/未命名.md",
@@ -223,7 +249,6 @@
     "annexes/Java技术/开源框架应用&源码分析/【原创】自定义持久层框架.md",
     "annexes/Java技术/开源框架应用&源码分析/【原创】Mybatis 的应用及源码分析.md",
     "annexes/Java技术/开源框架应用&源码分析/mybatis.pdf",
-    "annexes/Java技术/开源框架应用&源码分析/【扩展】springboot 嵌入式tomcat源码剖析.pdf",
     "annexes/Java技术/分布式架构设计&微服务/【原创】分布式核心理论&分布式架构设计&自定义RPC.md",
     "annexes/Python技术/AI + LLM/LangChain对话模型+服务部署.md",
     "annexes/Java技术/开源框架应用&源码分析/【图解】经典三层模式&mvc模式.png",
