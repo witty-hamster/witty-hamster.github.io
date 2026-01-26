@@ -38,8 +38,8 @@ Objects.requireNonNull(value);
 > 注意：即使你写了合并函数 `(v1, v2) -> v1`，但这也救不了这个异常情况，因为程序在执行合并逻辑之前就已经因为 `value` 为 `null` 而触发了 `requireNonNull` 检查。
 
 #### 4. 解决方案
-> [!note]
-> 有如下几种优雅的避坑方式
+> [!note] 优雅的解决方式
+> 查看下面的方案
 
  **方案A：使用 `Optional` 或 `Objects.requireNonNullElse`**
  > 如果你希望即便值为 `null` 也能存入一个默认值（如空字符串），那么下面的方式将是最高效的办法
