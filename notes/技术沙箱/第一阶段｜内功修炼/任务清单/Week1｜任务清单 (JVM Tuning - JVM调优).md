@@ -21,13 +21,13 @@
 
 - [x] **模拟犯罪现场：** 编写一个接口，故意利用 `static` 集合类导致内存泄漏（例如：不断往 `static List` 里添加大对象且不移除）。
     
-- [ ] **监控观察：** 使用 `jstat -gcutil <pid> 1000` 观察 `O` (Old Gen) 区的内存变化，直到看到 `Full GC` 频繁触发。
+- [x] **监控观察：** 使用 `jstat -gcutil <pid> 1000` 观察 `O` (Old Gen) 区的内存变化，直到看到 `Full GC` 频繁触发。
     
-- [ ] **现场取证：** * 配置 JVM 参数：`-XX:+HeapDumpOnOutOfMemoryError`。
+- [x] **现场取证：** * 配置 JVM 参数：`-XX:+HeapDumpOnOutOfMemoryError`。
     
     - 手动导出 Dump 文件：`jmap -dump:format=b,file=heap.hprof <pid>`。
         
-- [ ] **深度剖析：** 使用 **MAT** 打开 Dump 文件，通过 `Leak Suspects` 报告定位到那个 `static List`。
+- [x] **深度剖析：** 使用 **MAT** 打开 Dump 文件，通过 `Leak Suspects` 报告定位到那个 `static List`。
     
 
 #### ⚡ 第三步：GC 调优与选型（Day 5-6）
