@@ -3,5 +3,6 @@
   "newFileFolderPath": "notes",
   "strictLineBreaks": true,
   "attachmentFolderPath": "annexes",
-  "useMarkdownLinks": true
+  "useMarkdownLinks": true,
+  "alwaysUpdateLinks": true
 }
