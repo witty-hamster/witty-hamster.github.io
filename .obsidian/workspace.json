@@ -6,18 +6,73 @@
       {
         "id": "701ba9ed0c554237",
         "type": "tabs",
+        "dimension": 60.110497237569064,
         "children": [
           {
             "id": "bb4620733b6b395c",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "notes/技术沙箱/技术指南/【JVM进阶】Java21 分代 ZGC 实战排障.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "新标签页"
+              "title": "【JVM进阶】Java21 分代 ZGC 实战排障"
             }
           }
         ]
+      },
+      {
+        "id": "9e3fe7411436eedd",
+        "type": "tabs",
+        "dimension": 39.889502762430936,
+        "children": [
+          {
+            "id": "b59b3045a0530f3b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "notes/技术沙箱/技术指南/【JVM进阶】Java21 分代 ZGC 实战排障.md",
+                "mode": "preview",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "【JVM进阶】Java21 分代 ZGC 实战排障"
+            }
+          },
+          {
+            "id": "21606c9c89f4096c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "notes/技术沙箱/第一阶段｜内功修炼/任务清单/Week1｜任务清单 (JVM Tuning - JVM调优).md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Week1｜任务清单 (JVM Tuning - JVM调优)"
+            }
+          },
+          {
+            "id": "049b5394e8a6680e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "notes/技术沙箱/第一阶段｜内功修炼/001｜Java 底层实验场 (Tech-Sandbox) 学习路线.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "001｜Java 底层实验场 (Tech-Sandbox) 学习路线"
+            }
+          }
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -74,7 +129,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 389.5
+    "width": 289.5
   },
   "right": {
     "id": "07026863b8e512d8",
@@ -150,12 +205,13 @@
             "state": {
               "type": "outline",
               "state": {
+                "file": "notes/技术沙箱/第一阶段｜内功修炼/任务清单/Week1｜任务清单 (JVM Tuning - JVM调优).md",
                 "followCursor": true,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "大纲"
+              "title": "Week1｜任务清单 (JVM Tuning - JVM调优) 的大纲"
             }
           },
           {
@@ -190,6 +246,12 @@
   },
   "active": "ffcf6b3927c7318b",
   "lastOpenFiles": [
+    "notes/技术沙箱/技术指南/【JVM进阶】Java21 分代 ZGC 实战排障.md",
+    "notes/技术沙箱/第一阶段｜内功修炼/任务清单/Week1｜任务清单 (JVM Tuning - JVM调优).md",
+    "notes/TODO LIST.md",
+    "annexes/Pasted image 20260129180842.png",
+    "notes/技术沙箱/第一阶段｜内功修炼/001｜Java 底层实验场 (Tech-Sandbox) 学习路线.md",
+    "notes/技术沙箱/技术指南",
     "notes/避坑指南/【Java Stream流式处理】Java 8+ Collectors.toMap因Value为空导致NullPointerException的成因与解决方案.md",
     "notes/避坑指南/📑 避坑指南目录.md",
     "notes/避坑指南/【数据库】MySQL数据库表统计空间大小方案.md",
@@ -203,11 +265,8 @@
     "notes/技术沙箱/技术延伸｜避坑指南/Java.md",
     "notes/文章目录ALL.base",
     "notes/技术沙箱/技术方向大框架.md",
-    "notes/技术沙箱/第一阶段｜内功修炼/001｜Java 底层实验场 (Tech-Sandbox) 学习路线.md",
     "notes/未命名.md",
-    "notes/TODO LIST.md",
     "notes/技术沙箱/技术延伸｜避坑指南/未命名.base",
-    "notes/技术沙箱/第一阶段｜内功修炼/任务清单/Week1｜任务清单 (JVM Tuning - JVM调优).md",
     "notes/技术沙箱/技术延伸｜避坑指南",
     "notes/2026-01-23.md",
     "notes/技术沙箱/未命名.md",
@@ -222,10 +281,7 @@
     "notes/面试/02｜Spring生态体系与微服务.md",
     "notes/面试/05｜综合实战.md",
     "notes/问题分析/百万级数据计算与存储问题.md",
-    "notes/面试",
     "src/posts/git指南/如何将同一份代码分别推送到 github和 gitee 上.md",
-    "annexes/Python技术/AI + LLM/LangChain 基础.md",
-    "annexes/Python技术/AI + LLM/AI 领域基础概念.md",
     "annexes/Java技术/开源框架应用&源码分析/【图解】经典三层模式&mvc模式.png",
     "annexes/Java技术/开源框架应用&源码分析/【图解】spring IoC循环依赖问题.png",
     "annexes/Java技术/开源框架应用&源码分析/【图解】spring mvc模式和原生servlet模式区别.png",
@@ -235,7 +291,6 @@
     "annexes/Java技术/分布式架构设计&微服务/分布式理论图解/任务三 01分布式网络通信.jpg",
     "annexes/Java技术/分布式架构设计&微服务/分布式理论图解/任务一 15 2PC与3PC协议.jpg",
     "annexes/Java技术/分布式架构设计&微服务/分布式理论图解/任务一 05强弱一致性-读写一致性.jpg",
-    "annexes/Java技术/分布式架构设计&微服务/分布式理论图解/任务三 05 Netty线程模型.jpg",
     "未命名.canvas"
   ]
 }
