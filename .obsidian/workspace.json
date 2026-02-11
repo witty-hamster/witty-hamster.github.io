@@ -196,6 +196,7 @@
   },
   "active": "a6f349794ca22bf2",
   "lastOpenFiles": [
+    "notes/技术沙箱/技术指南/【JVM】从基础原理到高级应用.md",
     "notes/避坑指南/📑 避坑指南目录.md",
     "notes/避坑指南/【数据库】MySQL数据库表统计空间大小方案.md",
     "notes/避坑指南/【Java Stream流式处理】Java 8+ Collectors.toMap因Value为空导致NullPointerException的成因与解决方案.md",
