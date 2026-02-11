@@ -4,17 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "02b2a8c9e278e4aa",
+        "id": "2f4026ae712c38b3",
         "type": "tabs",
         "children": [
           {
-            "id": "174b865d986fb469",
+            "id": "4831f48b685a29d3",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "notes/TODO LIST.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "新标签页"
+              "title": "TODO LIST"
             }
           }
         ]
@@ -49,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "tag:异步&多线程",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -74,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 469.5
+    "width": 399.5
   },
   "right": {
     "id": "07026863b8e512d8",
@@ -150,12 +154,13 @@
             "state": {
               "type": "outline",
               "state": {
+                "file": "notes/TODO LIST.md",
                 "followCursor": true,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "大纲"
+              "title": "TODO LIST 的大纲"
             }
           },
           {
@@ -169,11 +174,12 @@
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
-    "width": 252.5
+    "width": 252.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -188,45 +194,46 @@
       "workspaces:管理工作区布局": false
     }
   },
-  "active": "ffcf6b3927c7318b",
+  "active": "a6f349794ca22bf2",
   "lastOpenFiles": [
+    "notes/避坑指南/📑 避坑指南目录.md",
+    "notes/避坑指南/【数据库】MySQL数据库表统计空间大小方案.md",
+    "notes/避坑指南/【Java Stream流式处理】Java 8+ Collectors.toMap因Value为空导致NullPointerException的成因与解决方案.md",
+    "notes/避坑指南",
+    "notes/技术沙箱/第一阶段｜内功修炼/任务清单/Week1｜任务清单 (JVM Tuning - JVM调优).md",
+    "notes/技术沙箱/第一阶段｜内功修炼/任务清单",
+    "notes/技术沙箱/第一阶段｜内功修炼/001｜Java 底层实验场 (Tech-Sandbox) 学习路线.md",
     "notes/技术沙箱/技术指南/【JVM进阶】Java21 分代 ZGC 实战排障.md",
     "notes/技术沙箱/技术指南/📑 技术指南目录.md",
-    "notes/避坑指南/📑 避坑指南目录.md",
-    "notes/避坑指南/【Java Stream流式处理】Java 8+ Collectors.toMap因Value为空导致NullPointerException的成因与解决方案.md",
-    "notes/技术沙箱/第一阶段｜内功修炼/001｜Java 底层实验场 (Tech-Sandbox) 学习路线.md",
-    "notes/技术沙箱/第一阶段｜内功修炼/任务清单/Week1｜任务清单 (JVM Tuning - JVM调优).md",
-    "notes/TODO LIST.md",
-    "annexes/Pasted image 20260129180842.png",
+    "notes/技术沙箱/第一阶段｜内功修炼",
+    "notes/技术沙箱/技术方向大框架.md",
     "notes/技术沙箱/技术指南",
-    "notes/避坑指南/【数据库】MySQL数据库表统计空间大小方案.md",
+    "notes/技术沙箱",
+    "notes/常用工具.md",
+    "src/posts/收集箱/spring-cloud-gateway源码调试环境搭建.md",
+    "src/posts/收集箱/Redis踩坑记录.md",
+    "src/posts/收集箱/CompletableFuture 类详解.md",
+    "src/posts/收集箱/基于 ELK + Filebeat 实现日志采集方案.md",
+    "src/README.md",
+    "src/intro.md",
+    "src/posts/README.md",
+    "src/posts/小技巧.md",
+    "src/posts/git指南/如何将同一份代码分别推送到 github和 gitee 上.md",
+    "notes/TODO LIST.md",
+    "notes/文章目录ALL.base",
+    "notes/问题分析/百万级数据计算与存储问题.md",
+    "annexes/Pasted image 20260129180842.png",
+    "images/202511/image-20251114132831315.png",
+    "images/202511/image-20251114132831320.png",
     "notes/处理方案.md",
     "notes/【Java.md",
-    "notes/避坑指南",
     "notes/01【Java.md",
     "notes/面试/01｜Java核心底层技术.md",
     "notes/面试/面试目录.md",
-    "notes/Java.md",
-    "notes/技术沙箱/技术延伸｜避坑指南/Java.md",
-    "notes/文章目录ALL.base",
-    "notes/技术沙箱/技术方向大框架.md",
-    "notes/未命名.md",
     "notes/技术沙箱/技术延伸｜避坑指南/未命名.base",
     "notes/技术沙箱/技术延伸｜避坑指南",
-    "notes/2026-01-23.md",
-    "notes/技术沙箱/未命名.md",
     "notes/技术沙箱/技术延伸｜数据库",
-    "notes/技术沙箱/第一阶段｜内功修炼/任务清单",
-    "notes/技术沙箱/第一阶段｜内功修炼",
-    "notes/技术沙箱",
-    "notes/常用工具.md",
     "notes/未命名 1.base",
-    "notes/面试/04｜容器化与云原生.md",
-    "notes/面试/03｜数据库、缓存与中间件.md",
-    "notes/面试/02｜Spring生态体系与微服务.md",
-    "notes/面试/05｜综合实战.md",
-    "notes/问题分析/百万级数据计算与存储问题.md",
-    "src/posts/git指南/如何将同一份代码分别推送到 github和 gitee 上.md",
     "annexes/Java技术/开源框架应用&源码分析/【图解】经典三层模式&mvc模式.png",
     "annexes/Java技术/开源框架应用&源码分析/【图解】spring IoC循环依赖问题.png",
     "annexes/Java技术/开源框架应用&源码分析/【图解】spring mvc模式和原生servlet模式区别.png",
@@ -234,8 +241,6 @@
     "annexes/Java技术/分布式架构设计&微服务/分布式理论图解/任务一 10CAP 生活举例.jpg",
     "annexes/Java技术/分布式架构设计&微服务/分布式理论图解/任务一 02集群与分布式.jpg",
     "annexes/Java技术/分布式架构设计&微服务/分布式理论图解/任务三 01分布式网络通信.jpg",
-    "annexes/Java技术/分布式架构设计&微服务/分布式理论图解/任务一 15 2PC与3PC协议.jpg",
-    "annexes/Java技术/分布式架构设计&微服务/分布式理论图解/任务一 05强弱一致性-读写一致性.jpg",
     "未命名.canvas"
   ]
 }
