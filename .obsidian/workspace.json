@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "notes/TODO LIST.md",
+                "file": "notes/技术沙箱/技术指南/【JVM】从基础原理到高级应用.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "TODO LIST"
+              "title": "【JVM】从基础原理到高级应用"
             }
           }
         ]
@@ -154,13 +154,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "notes/TODO LIST.md",
+                "file": "notes/技术沙箱/技术指南/【JVM】从基础原理到高级应用.md",
                 "followCursor": true,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "TODO LIST 的大纲"
+              "title": "【JVM】从基础原理到高级应用 的大纲"
             }
           },
           {
@@ -194,8 +194,9 @@
       "workspaces:管理工作区布局": false
     }
   },
-  "active": "a6f349794ca22bf2",
+  "active": "4831f48b685a29d3",
   "lastOpenFiles": [
+    "notes/TODO LIST.md",
     "notes/技术沙箱/技术指南/【JVM】从基础原理到高级应用.md",
     "notes/避坑指南/📑 避坑指南目录.md",
     "notes/避坑指南/【数据库】MySQL数据库表统计空间大小方案.md",
@@ -220,7 +221,6 @@
     "src/posts/README.md",
     "src/posts/小技巧.md",
     "src/posts/git指南/如何将同一份代码分别推送到 github和 gitee 上.md",
-    "notes/TODO LIST.md",
     "notes/文章目录ALL.base",
     "notes/问题分析/百万级数据计算与存储问题.md",
     "annexes/Pasted image 20260129180842.png",
